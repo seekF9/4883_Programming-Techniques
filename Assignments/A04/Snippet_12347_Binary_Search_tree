@@ -1,4 +1,4 @@
-``` cpp
+```cpp
 struct Tree{
     int val = 0;
     Tree *L = nullptr;

@@ -1,4 +1,4 @@
-''' cpp
+''' C++
 #define NOVALUE -1
 
 struct Node{

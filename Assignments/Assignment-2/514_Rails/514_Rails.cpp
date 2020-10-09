@@ -63,3 +63,4 @@ void order_check(stack<int> carts) {
         else printf("No\n");
     }
 }
+}

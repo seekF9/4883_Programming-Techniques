@@ -5,19 +5,20 @@
 #include <stdio.h>
 #include <iostream>
 
-int main() 
+int main()
 {
-  int T,L,W,H;
-  std::cin >> T;
-  for(int i = 1; i <= T; i++)
-  {
-      std::cin >> L >> W >> H; 
-        if(L <= 20 && W <= 20 && H <= 20)
-        std::cout << "Case " << i << ":" << " good" << "\n"; 
-        else 
-        std::cout << "Case " << i << ":" << " bad" << "\n"; 
-  }
-  return 0;
+    int Test_case, Length, Width, H;
+    std::cin >> Test_case;
+    // for loop that checks the box with suitcase size
+    for (int i = 1; i <= Test_case; i++)
+    {
+        std::cin >> L >> W >> H; // reding input
+        if (Length <= 20 && Width <= 20 && Height <= 20) // box fits
+            std::cout << "Case " << i << ":" << " good" << "\n";
+        else if(Length > 20 && Width > 20 && Height > 20) // box does not fit
+            std::cout << "Case " << i << ":" << " bad" << "\n";
+    }
+    
 }
 
 
